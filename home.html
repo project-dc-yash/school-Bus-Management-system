@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart School Bus Tracking System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    }
+    .container {
+      width: 480px;
+      padding: 30px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      color: #fff;
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    h3 {
+      color: #fff;
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
+    p {
+      color: #fff;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      background: #ff7e5f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #e05643;
+    }
+    .bus-image {
+      width: 220px;
+      height: auto;
+      margin: 20px auto;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Smart School Bus Tracking</h1>
+    <h3>IoT Device Monitoring</h3>
+
+    <!-- Bus Image -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1995/1995500.png" alt="School Bus" class="bus-image" />
+
+    <p>Track your school bus in real-time using smart GPS technology.</p>
+    <button class="btn" onclick="window.location.href='./processcode.html'">Start Location Tracking</button>
+  </div>
+</body>
+</html>
